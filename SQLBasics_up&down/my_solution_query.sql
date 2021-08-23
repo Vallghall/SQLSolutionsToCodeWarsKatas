@@ -7,4 +7,4 @@ CASE WHEN SUM(number2)%2!=0
   THEN MIN(number2) 
   ELSE MAX(number2) 
   END AS number2
-FROM numbers
+FROM numbers;

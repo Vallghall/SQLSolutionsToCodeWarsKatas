@@ -3,4 +3,4 @@ CASE WHEN clan='' THEN '[no clan specified]' ELSE clan END AS clan,
 SUM(points) AS total_points, 
 COUNT(people.name) AS total_people
 FROM people
-GROUP BY clan
+GROUP BY clan;
