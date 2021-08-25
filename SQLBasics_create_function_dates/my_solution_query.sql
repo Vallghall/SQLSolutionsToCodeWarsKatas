@@ -1,0 +1,8 @@
+CREATE FUNCTION agecalculator (d TIMESTAMP) 
+  RETURNS integer AS 
+$$
+BEGIN
+  RETURN (SELECT EXTRACT(YEAR FROM age(d)))::INTEGER;
+END;
+$$ 
+LANGUAGE plpgsql;
